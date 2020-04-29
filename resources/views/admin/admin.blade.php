@@ -156,7 +156,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="{{ route('perfil_user') }}" class="d-block">{{ Auth::user()->name }}</a>
         </div>
     </div>
-      <!-- Sidebar Menu -->
+      <!-- Sidebar Menu sss-->
       @include('admin.menu')
       <!-- /.sidebar-menu -->
     </div>
