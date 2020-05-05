@@ -13,12 +13,24 @@
 </div>
 <form action="">
 	<div class="row mb-4"><!-----fila de BUSCADOR EN INVENTARIO ----->
-		<input id="buscar_codigos_inventario" name="buscar_codigos_inventario" type="text" placeholder="Codigo" class="form-control input-sm col-sm-2" required>
-		<input id="buscar_descripcion_inventario" name="buscar_descripcion_inventario" type="text" placeholder="Descripcion" class="form-control input-sm col-sm-2">
-		<input id="buscar_marca_inventario" name="buscar_marca_inventario" type="text" placeholder="Marca" class="form-control input-sm col-sm-2">
-		<input id="buscar_modelo_inventario" name="buscar_modelo_inventario" type="text" placeholder="Modelo" class="form-control input-sm col-sm-2">
-		<input id="buscar_anio_inventario" name="buscar_anio_inventario" type="text" placeholder="Anio" class="form-control input-sm col-sm-2">
-		<input id="buscar_marcaR_inventario" name="buscar_marcaR_inventario" type="text" placeholder="Marca_R" class="form-control input-sm col-sm-2">
+		<div class="col-lg-2">
+		<input id="buscar_codigos_inventario" name="buscar_codigos_inventario" type="text" placeholder="Código" class="form-control input-sm " required>
+		</div>
+		<div class="col-lg-2">
+		<input id="buscar_descripcion_inventario" name="buscar_descripcion_inventario" type="text" placeholder="Descripción" class="form-control input-sm ">
+		</div>
+		<div class="col-lg-2">
+		<input id="buscar_marca_inventario" name="buscar_marca_inventario" type="text" placeholder="MarcaVehículo" class="form-control input-sm ">
+		</div>
+		<div class="col-lg-2">
+		<input id="buscar_modelo_inventario" name="buscar_modelo_inventario" type="text" placeholder="Modelo" class="form-control input-sm ">
+		</div>
+		<div class="col-lg-2">
+		<input id="buscar_anio_inventario" name="buscar_anio_inventario" type="text" placeholder="Año" class="form-control input-sm ">
+		</div>
+		<div class="col-lg-2">
+		<input id="buscar_marcaR_inventario" name="buscar_marcaR_inventario" type="text" placeholder="MarcaRepuesto" class="form-control input-sm ">
+		</div>
 		<!-----<input id="procedencia" name="procedencia" type="text" placeholder="Procedencia" class="form-control input-sm col-sm-2">----->
 	</div> <!----- fin de fila de BUSCADOR EN INVENTARIO ----->
 </form>
