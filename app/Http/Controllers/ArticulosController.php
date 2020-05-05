@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Cliente;
 use Illuminate\Http\Request;
+use App\Articulo;
 
-class ClientesController extends Controller
+class ArticulosController extends Controller
 {
-    //
+	//
 }

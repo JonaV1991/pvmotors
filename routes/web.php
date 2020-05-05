@@ -35,11 +35,14 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('passw
 Route::get('/admin/admin', 'HomeController@index')->name('home');
 //rutas de los NAVS del sistema
 Route::get('admin/perfil_user', 'HomeController@indexPerfilUser')->name('perfil_user');
-Route::get('admin/clientes', 'ClientesController@indexPerfilCliente')->name('perfil_cliente');
+Route::get('admin/clientes', 'HomeController@indexPerfilCliente')->name('perfil_cliente');
 Route::get('admin/dashboard', 'HomeController@indexPerfilDashboard')->name('dashboard');
 Route::get('admin/inventario', 'HomeController@indexPerfilInventario')->name('inventario');
 Route::get('admin/cotizaciones', 'HomeController@indexPerfilCotzaciones')->name('cotizaciones');
 Route::get('admin/user_cotizar', 'HomeController@indexPerfilCotizar')->name('cotizar');
+Route::get('admin/tienda', 'HomeController@indexPerfilTienda')->name('tienda');
 Route::get('admin/servicios', 'HomeController@indexPerfilServicios')->name('servicios');
 Route::get('admin/contactos', 'HomeController@indexPerfilContactos')->name('contactos');
+Route::post('admin/contactos', 'CorreosController@correo_contacto')->name('sendmail');
+Route::post('admin/user_cotizar', 'CorreosController@correo_cotizacion')->name('sendcotizacion');
 Route::get('admin/pedidos', 'HomeController@indexPerfilPedidos')->name('pedidos');

@@ -16,7 +16,7 @@
                 height: 100vh;
                 margin: 0;
             }
-            .container{
+            .container-fluid{
                 background-color: #F5F5F5;
 
             }
@@ -65,7 +65,7 @@
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
           <!-- cabecera -->
           <div class="row">
             <div class="col-lg-9"></div>

@@ -57,6 +57,15 @@
                     </a>
                </li>
                <li class="nav-item has-treeview">
+                    <a href="{{ route('tienda') }}" class="nav-link">
+                         <i class="nav-icon fas fa-store""></i>
+                         <p>
+                              Tienda
+                              <i class="right fas fa-angle-left"></i>
+                         </p>
+                    </a>
+               </li>
+               <li class="nav-item has-treeview">
                     <a href="{{ route('servicios') }}" class="nav-link">
                          <i class="nav-icon fas fa-oil-can"></i>
                          <p>

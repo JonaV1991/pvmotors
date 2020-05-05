@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Articulo;
+use App\Cliente;
 
 class HomeController extends Controller
 {
@@ -31,7 +33,8 @@ class HomeController extends Controller
     }
     public function indexPerfilCliente()
     {
-        return view('admin.clientes');
+      $clientes = Cliente::all();
+      return view('admin.clientes',compact('clientes')); 
     }
     public function indexPerfilDashboard()
     {
@@ -39,7 +42,8 @@ class HomeController extends Controller
     }
     public function indexPerfilInventario()
     {
-        return view('admin.inventario');
+      $articulos = Articulo::all();
+      return view('admin.inventario',compact('articulos')); 
     }
     public function indexPerfilCotzaciones()
     {
@@ -48,6 +52,11 @@ class HomeController extends Controller
     public function indexPerfilCotizar()
     {
         return view('admin.user_cotizar');
+    }
+    public function indexPerfilTienda()
+    {
+      $articulos = Articulo::all();
+      return view('admin.tienda',compact('articulos')); 
     }
     public function indexPerfilServicios()
     {

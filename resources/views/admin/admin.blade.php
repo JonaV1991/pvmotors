@@ -156,7 +156,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a href="{{ route('perfil_user') }}" class="d-block">{{ Auth::user()->name }}</a>
         </div>
     </div>
-      <!-- Sidebar Menu sss-->
+      <!-- Sidebar Menu ssscx-->
       @include('admin.menu')
       <!-- /.sidebar-menu -->
     </div>
@@ -172,6 +172,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         @yield('contactos')
         @yield('cotizaciones')
         @yield('dashboard')
+        @yield('tienda')
         @yield('inventario')
         @yield('pedidos')
         @yield('perfil_user')
@@ -188,6 +189,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         @yield('contactos_content')
         @yield('cotizaciones_content')
         @yield('dashboard_content')
+        @yield('tienda_content')
         @yield('inventario_content')
         @yield('pedidos_content')
         @yield('perfil_user_content')
@@ -217,7 +219,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="#">Jonathan Veintimilla</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2020 Jonathan Veintimilla.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->
